@@ -1,24 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Privacy Policy - muzdo</title>
   <style>
+    :root {
+      --text-color: #2d2d2d;
+      --accent-color: #0059ff;
+      --background-color: #f9f9f9;
+      --heading-color: #1a1a1a;
+      --muted-color: #777;
+      --max-width: 800px;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      margin: 2rem;
-      line-height: 1.6;
-      background-color: #fdfdfd;
-      color: #333;
+      font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      max-width: var(--max-width);
+      line-height: 1.8;
+      background-color: var(--background-color);
+      color: var(--text-color);
     }
+
     h1, h2 {
-      color: #2b2b2b;
+      color: var(--heading-color);
+      margin-bottom: 0.5rem;
     }
+
+    h1 {
+      font-size: 2rem;
+      margin-top: 0;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      margin-top: 2rem;
+    }
+
+    p, ul {
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    strong {
+      color: var(--accent-color);
+    }
+
     footer {
       margin-top: 3rem;
-      font-size: 0.9rem;
-      color: #777;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--muted-color);
+      border-top: 1px solid #ddd;
+      padding-top: 1rem;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text-color: #eaeaea;
+        --background-color: #1e1e1e;
+        --heading-color: #ffffff;
+        --muted-color: #aaa;
+      }
+
+      body {
+        background-color: var(--background-color);
+        color: var(--text-color);
+      }
+
+      footer {
+        border-top: 1px solid #444;
+      }
     }
   </style>
 </head>
@@ -42,12 +103,13 @@
   </ul>
 
   <h2>3. Data Retention and Deletion</h2>
-<p>
-  The UUID is stored locally on your device and may also be stored securely on our server. 
-  Once you uninstall the app, the UUID is permanently deleted from your device. 
-  Your bookmarks are linked to this UUID and may be deleted from our server after a period of inactivity. 
-  We do not retain any personally identifiable information.
-</p>
+  <p>
+    The UUID is stored locally on your device and may also be stored securely on our server. 
+    Once you uninstall the app, the UUID is permanently deleted from your device. 
+    Your bookmarks are linked to this UUID and may be deleted from our server after a period of inactivity. 
+    We do not retain any personally identifiable information.
+  </p>
+
   <h2>4. Data Sharing</h2>
   <p>We do <strong>not</strong> share your data with any third parties. We do <strong>not</strong> use analytics, advertising, or external tracking services.</p>
 
@@ -58,7 +120,7 @@
   <p>If you have any questions or concerns about this policy, please contact us:</p>
   <ul>
     <li>Email: <strong>developer.muzdo@gmail.com</strong></li>
-    <li>Website: <strong>[your website URL]</strong></li>
+    <li>Website: <strong>https://skythegowda.github.io/decadecoder/privacy.html</strong></li>
   </ul>
 
   <h2>7. Changes to This Policy</h2>
